@@ -1,0 +1,286 @@
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .header__mainmenu .header__item {
+        display: none;
+    }
+    .header__hamburger-menu {
+        display: block;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 15% 10%;
+        align-items: center;
+    }
+    .header__basket {
+        width: 35px;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 50px;
+        height: 40px;
+        margin-right: 5vw;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #B99BB6;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -15px;
+    }
+    .menu__btn>span{
+        top: 5px
+    }
+    .menu__btn>span::after {
+        content: '';
+        top: 15px;
+    }
+
+    .menu__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #9e9794;
+        border-radius: 20px;
+        z-index: 100;
+    }
+
+    .menu__item {
+        display: block;
+        padding: 20px;
+        color: #FFFFFF;
+        font-family: 'Red Hat Text' sans-serif;
+        font-size: 3em;
+        text-align: right;
+        padding-right: 50px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+        top: 0;
+        z-index: 200;
+    }
+
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        right: 0;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .header__mainmenu .header__item,
+    .section1,
+    .section3,
+    .section5,
+    .section7_address,
+    .footer2,
+    .footer1__text{
+        display: none;
+    }
+    .header__hamburger-menu {
+        display: block;
+    }
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 15% 10%;
+        align-items: center;
+    }
+    .header__basket {
+        width: 35px;
+    }
+    #menu__toggle {
+        opacity: 0;
+    }
+    .menu__btn {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 50px;
+        height: 40px;
+        margin-right: 5vw;
+    }
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #B99BB6;
+    }
+    .menu__btn>span::before {
+        content: '';
+        top: -15px;
+    }
+    .menu__btn>span{
+        top: 5px
+    }
+    .menu__btn>span::after {
+        content: '';
+        top: 15px;
+    }
+    .menu__box {
+        display: block;
+        position: absolute;
+        visibility: hidden;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #9e9794;
+        border-radius: 20px;
+        z-index: 100;
+    }
+    .menu__item {
+        display: block;
+        padding: 20px;
+        color: #FFFFFF;
+        font-family: 'Red Hat Text' sans-serif;
+        font-size: 3em;
+        text-align: right;
+        padding-right: 50px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    #menu__toggle:checked~.menu__btn>span {
+        transform: rotate(45deg);
+        top: 0;
+        z-index: 200;
+    }
+    #menu__toggle:checked~.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked~.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked~.menu__box {
+        visibility: visible;
+        right: 0;
+    }
+    .section2__about-me {
+        width: 100%;
+        margin-left: 0;
+    }
+    .section4__block {
+        display: flex;
+        flex-direction: column;
+    }
+    .block__title{
+        text-align: center;
+    }
+    .section4__block-carrer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .carrer__img{
+        margin-top: 50px;
+    }
+    .section6{
+        margin-top: 40px;
+    }
+    .section6__block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 30px;
+        justify-content: center;
+    }
+    .section6__line{
+        display: block;
+        border-bottom: 1px solid #D7B7D4;
+        margin: 40px 9.4vw;
+    }
+    .section7 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 1fr;
+        background-color: #CEB3CB;
+        margin-bottom: 0;
+        padding: 50px;
+    }
+    .section7__address {
+        margin-left: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .section7__form div {
+        display: flex;
+        flex-direction: column;
+    }
+    .section7__form input {
+        width: 100%;
+    }
+    .section7__form textarea {
+        width: 100%;
+    }
+    .section8 {
+        margin-top: 40px;
+    }
+    .section8__div{
+        width: 80vw;
+    }
+    .section8__div div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section8__input{
+        width: 100%;
+        height: 40px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    .section8__input::-webkit-input-placeholder {
+        text-align: center;
+    }
+    .section8__btn{
+        height: 40px;
+        border-radius: 10px;
+    }
+    .footer1 {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .p_new{
+        font-size: 1em;
+    }
+}
